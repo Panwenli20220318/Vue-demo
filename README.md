@@ -1,9 +1,7 @@
 # Vue-demo
-基于Vue写得小案例：计数器、图片切换、记事本、天气查询、音乐播放器
+基于Vue写得小案例：计数器、图片切换、记事本、天气查询
 
-#### 1.计数器
-![1.gif](https://s2.loli.net/2022/03/20/e7uD4IQjXlKsVnL.gif)
-
+### 1.计数器
 分析：
 
 1. data中定义数据:比如num
@@ -18,10 +16,10 @@
 
 6. 递减的逻辑:大于0递减,否则提示
 
-#### 2.图片切换
+![1.gif](https://s2.loli.net/2022/03/20/e7uD4IQjXlKsVnL.gif)
 
-![2.gif](https://s2.loli.net/2022/03/20/rnLElUogR4cmy1k.gif)
 
+### 2.图片切换
 分析：
 
 1. 定义图片数组
@@ -29,8 +27,11 @@
 3. 绑定src属性
 4. 图片切换逻辑
 
-#### 3.记事本
+![2.gif](https://s2.loli.net/2022/03/20/rnLElUogR4cmy1k.gif)
 
+
+
+### 3.记事本
 功能分析：
 
 - 新增
@@ -54,11 +55,18 @@
 
     没有数据时,隐藏元素(v-show v-if 数组非空)
 
-#### 4.天气查询
+![1.gif](https://s2.loli.net/2022/03/20/CILN3Bvmxw4khKr.gif)
 
 
 
-#### 5.音乐播放器
+#### 4.天气查询（vue+axios）
+
+- 回车查询
+- 点击查询
+
+  ![1.gif](https://s2.loli.net/2022/03/20/j4YlStDhBTCQEMi.gif)
+
+
 
 
 
