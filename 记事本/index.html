@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="todoapp">
+
+        <header class="header">
+            <h1>拾忆记事本</h1>
+            <p>记录生活点点滴滴，写下生活每一个美好</p>
+            <!-- 输入框 -->
+            <div class="input_box">
+                <button>内容</button>
+                <input placeholder="请输入你要记事的内容" v-model="inputValue" @keyup.enter="addTodo" />
+                <button @click="addTodo">确认</button>
+            </div>
+        </header>
+
+        <!-- 列表区域 -->
+        <main class="main">
+            <ul class="todo-list">
+                <li class="todo" v-for="(item,index) in todoList">
+                    <div>
+                        <span class="index">{{index+1}}</span>
+                        <label>{{item}}</label>
+                        <a @click="delTode">×</a>
+                    </div>
+                </li>
+            </ul>
+        </main>
+
+        <!-- 统计和清空 -->
+        <footer class="footer">
+            <span class="todo-count">
+                 总数： <strong>{{todoList.length}}</strong> 
+                  </span>
+            <a class="clear-completed" @click="clearTodo">清除</a>
+        </footer>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
